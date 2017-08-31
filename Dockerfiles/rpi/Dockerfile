@@ -1,0 +1,5 @@
+FROM hypriot/rpi-node:8.1
+ADD ../../src /src
+WORKDIR /src
+RUN npm install
+CMD ["node", "run.js"]
